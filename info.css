@@ -1,0 +1,239 @@
+.section-p1 {
+    padding: 10px 80px;
+}
+
+#image-area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 7px;
+}
+
+#image-area img {
+    width: 120px;
+    height: 150px;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.644);
+    border-radius: 25%;
+}
+
+#image-area img:hover ~ #change-image {
+    display: block;
+}
+
+#archv {
+    display: none;
+}
+
+#change-image {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-size: 10px;
+    font-weight: 800;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    transform: translate(-50%, -50%);
+}
+
+#change-image:hover {
+    display: block;
+}
+
+#dados {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 10px;
+}
+
+#dados label {
+    font-weight: 600;
+    font-size: 10px;
+    width: 30%;
+    align-self: center;
+}
+
+.info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgba(138, 133, 133, 0.589);
+    padding: 10px 20px 20px 20px;
+    background-color: rgba(77, 252, 194, 0.149);
+}
+
+.info:nth-child(1) {
+    width: 50%;
+}
+
+.info h2 {
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+#social {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 15px;
+}
+
+#social a {
+    color: #1a1a1a;
+    padding: 5px 7px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #c5baba;
+}
+
+#social a:hover {
+    background-color: white;
+}
+
+#saldo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#saldo h3 {
+    color: #1a1a1a;
+}
+
+#money h2 {
+    color: rgb(7, 112, 7);
+    filter: blur(12px);
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    padding: 5px 10px;
+    transition: 0.3s ease;
+}
+
+#money h2.active {
+    filter: blur(0px);
+}
+
+#show-money {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#show-money input{
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#show-money label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:799px){
+    #container {
+        height: 85vh;
+    }
+
+    #image-area img {
+        width: 180px;
+        height: 220px;
+        padding: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.644);
+        border-radius: 25%;
+    }
+
+    #change-image {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    #dados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        align-content: center;
+        padding-bottom: 10px;
+    }
+
+    .info {
+        width: 85%;
+        margin: 10px 0;
+    }
+
+    .info:nth-child(1) {
+        width: 85%;
+    }
+
+    #social {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 15px;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width:499px){
+    .normal-input {
+        font-size: 12px;
+    }
+
+    #container {
+        height: 80vh;
+    }
+
+    .section-p1 {
+        padding: 10px 10px;
+    }
+
+    #image-area {
+        margin-bottom: 0px;
+    }
+
+    #image-area img {
+        width: 120px;
+        height: 130px;
+        padding: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.644);
+        border-radius: 25%;
+    }
+
+    #change-image {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    #dados {
+        padding-bottom: 4px;
+    }
+    
+    .info {
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .info:nth-child(1) {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+
+    #social {
+        margin-bottom: 20px;
+    }
+
+}

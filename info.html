@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="info.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <img src="imgs/menu.jpg" alt="Menu" onclick="clickBar()">
+            <h1>Admin User</h1>
+        </div>
+        <nav id="menu-bar">
+            <a href="index.html">Verificar Produto</a>
+            <a href="info.html">Informação Pessoal</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+    
+    <main class="section-p1">
+        <div id="container">
+            <div id="image-area">
+                <img src="imgs/background.jpg" alt="" id="prof_img">
+                <label for="archv" id="change-image" class="normal-button">Trocar Imagem</label>
+                <input type="file" name="archv" id="archv" accept="img/jpeg, img/jpg, image/png">
+            </div>
+            <div id="dados">
+                <div class="info">
+                    <h2>Informações básicas</h2>
+                    <div class="label-input">
+                        <label for="text">Nome</label><input type="text" class="normal-input" placeholder="Whatever Name Ofa People" disabled>
+                    </div>
+                    <div class="label-input">
+                        <label for="text">Data de Nascimento</label><input type="text" class="normal-input" placeholder="20/07/1999" disabled>
+                    </div>
+                    <div class="label-input">
+                        <label for="text">Gênero</label><input type="text" class="normal-input" placeholder="Undefined" disabled>
+                    </div>
+                </div>
+                <div class="info">
+                    <h2>Informações de contato</h2>
+                    <div class="label-input">
+                        <label for="text">Telefone</label><input type="text" class="normal-input" placeholder="(78) 98360-9554" disabled>
+                    </div>
+                    <div class="label-input">
+                        <label for="text">Email</label><input type="text" class="normal-input" placeholder="whateveremail.21@kmail.com" disabled>
+                    </div>
+                    <div class="label-input">
+                        <label for="text">Endereço</label><input type="text" class="normal-input" placeholder="Street Whatever - Center, n 08 " disabled>
+                    </div>
+                </div>
+            </div>
+            <div id="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div id="saldo">
+                <h3>Saldo</h2>
+                <div id="money">
+                    <h2 id="money-value">$7888888888</h2>
+                    <div id="show-money">
+                        <input type="checkbox" id="show"><label for="checkbox">Mostrar Saldo</label>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </main>
+    <footer>
+        <h2>Created By Renan</h2>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        const show_money = document.getElementById('show');
+        const money = document.getElementById('money-value');
+        const archive = document.getElementById('archv');
+        const prof_img = document.getElementById('prof_img');
+        var dir_img = '';
+
+        archive.addEventListener('change', function(){
+            prof_img.src = URL.createObjectURL(archive.files[0]);
+        })
+
+        show_money.addEventListener('change', () => {
+            if (money.classList.contains('active')){
+                money.classList.remove('active');
+            }else {
+                money.classList.add('active');
+            }
+        })
+    </script>
+</body>
+</html>

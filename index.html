@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <img src="imgs/menu.jpg" alt="Menu" onclick="clickBar()">
+            <h1>Admin User</h1>
+        </div>
+        <nav id="menu-bar">
+            <a href="index.html">Verificar Produto</a>
+            <a href="info.html">Informação Pessoal</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </header>
+    
+    <main class="section-p1">
+        <div id="container">
+            <h2>Produtos</h2>
+            <div id="add-prod">
+                <div class="form">
+                    <label for="text">Nome</label><input type="text" class="elemProp" maxlength="12"></input>
+                </div>
+                <div class="form">
+                    <label for="number">Quantidade</label><input type="number" class="elemProp"></input>
+                </div>
+                <div class="form">
+                    <label for="date">Data</label><input type="date" class="elemProp"></input>
+                </div>
+                
+                <button onclick="addElement()" class="normal-button">Adicionar</button>
+            </div>
+        
+            <table id="table">
+                <caption>Produtos Adicionados</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <h2>Created By Renan</h2>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

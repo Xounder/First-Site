@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <h1>Admin User</h1>
+        </div>
+    </header>   
+    <main class="section-p1">
+        <div id="container">
+            <img src="imgs/background.jpg" alt="">
+            <form action="index.html" method="post" autocomplete="on">
+                <h1>Login</h1>
+                <div class="form-input">
+                    <label for="email">Email</label><input type="email" maxlength="33" autocomplete="email" id="email" required>
+                </div>
+                <div class="form-input">
+                    <label for="password">Password</label><input type="password" maxlength="20" minlength="8" autocomplete="current-password" id="password" required>
+                </div>
+                <div id="forget">
+                    <input type="checkbox" name="rem" id="rem"><label for="checkbox">Remember Me</label>
+                    <a href="#">Esqueci a Senha</a>
+                </div>
+                <input type="submit" value="Log In" class="normal-button">
+                <p>Não possui uma conta <a href="#">Registrar</a></p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h2>Created By Renan</h2>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

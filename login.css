@@ -1,0 +1,133 @@
+.section-p1 {
+    padding: 0;
+}
+
+label, p, a {
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(141, 134, 134);
+}
+
+main {
+    height: 85.8vh;
+    position: relative;
+}
+
+#container {
+    position: absolute;
+    display: flex;   
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    width: 50vw;
+    height: 55vh;
+    min-height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container img {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    border-radius: 5px;
+}
+
+form {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+form h1 {
+    text-align: center;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-input label {
+    text-align: left;
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-input input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(97, 86, 86);
+    background-color: transparent;
+    font-size: 16px;
+}
+
+#forget {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#forget label {
+    align-self: center;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+
+.normal-button {
+    margin: 5px 0 15px 0;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.normal-button:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width:799px){
+    main {
+        height: 90.9vh;
+    }
+
+    #container {
+        width: 90vw;
+        height: 40vh;
+        min-height: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width:490px){
+    main {
+        height: 89vh;
+    }
+
+    #container {
+        flex-direction: column;
+        margin: auto;
+        width: 90vw;
+        height: 60vh;
+    }
+
+    #container img {
+        width: 60%;
+        height: 60%;
+    }
+}
